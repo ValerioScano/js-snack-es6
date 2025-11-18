@@ -2,10 +2,9 @@ const biciclette = [{nome:"wilier", peso : 60}, {nome: "megamo", peso: 30}, {nom
 
 document.getElementById("inizia").addEventListener("click", function(event) {
     event.preventDefault();
-    debugger
     let biciclettaLeggera = biciclette[0]
     for (i=0; i < biciclette.length; i++) {
-        if (biciclette[i].peso < biciclettaLeggera) {
+        if (biciclette[i].peso < biciclettaLeggera.peso) {
             biciclettaLeggera = biciclette[i]
         }
     }
